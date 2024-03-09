@@ -1,0 +1,228 @@
+/* styles.css */
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Courier New', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer; /* Change cursor to pointer for interactivity */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Styles for hover and active states */
+.navbar a:hover {
+  color: #c7c7c7; /* Change color on hover */
+}
+
+.navbar a:active {
+  color: #ff3300; /* Change color on click */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+
+.image-with-text {
+  display: flex;
+  align-items: center;
+}
+
+.image-text {
+  margin-left: 20px;
+}
+
+.contact-boxes {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  text-align: center;
+  background-color: #d1cfcf;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.contact-box img{
+  max-width: 50px;
+}
+
+/* Center the image container and display images next to each other */
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%; /* Take up the full width of the container */
+  height: 300px;
+  border-radius: 8px;
+  margin-right: 10px; /* Adjust the margin between images if needed */
+}
+
+.article-boxes {
+  display: flex;
+  justify-content: center;
+}
+
+.article-box {
+  display: flex; /* Use flex to align image and content */
+  align-items: center; /* Center items vertically */
+  text-align: left; /* Align text to the left */
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 10px;
+  flex-grow: 1; /* Each box takes equal width */
+}
+
+.article-box img {
+  max-width: 250px;
+  max-height: 260px;
+  margin-right: 20px; /* Add some space between the image and content */
+}
+
+
+.brand-with-text img{
+  max-width: 280px;
+  max-height: 80px;
+  margin-left: 140px;
+  
+}
+
+
+/* Add the following styles for the hover effect */
+
+/* Contact Box Hover Effect */
+.contact-box:hover {
+  background-color: #a8a6a6; /* Change background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+
+/* Image Hover Effect */
+.image:hover {
+  border: 2px solid #c7c7c7; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+
+/* Article Box Image Hover Effect */
+.article-box:hover {
+  border: 2px solid #c7c7c7; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+
+.brand-with-text {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.brand-with-text img:hover {
+  border: 2px solid #c7c7c7; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
+}
+
+.text-left {
+text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+b {
+  font-size: larger;
+  color: black;
+}
+
+i {
+  font-size: larger;
+  color: black;
+}
+.banner {
+  width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("Assets/Derrick Banner 50Black Overlay with text.jpg");
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 2000; /* Adjust the z-index to make sure the banner appears above other elements */
+}
+
+.banner img {
+  width: 1520px;
+  height: 420px;
+}

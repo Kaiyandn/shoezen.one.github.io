@@ -1,0 +1,84 @@
+/* styles.css */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Courier New', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  /* Styles for hover and active states */
+  .navbar a:hover {
+    color: #c7c7c7; /* Change color on hover */
+  }
+  
+  .navbar a:active {
+    color: #ff3300; /* Change color on click */
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  
+  p {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
