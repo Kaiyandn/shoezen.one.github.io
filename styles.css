@@ -127,33 +127,6 @@ img {
   margin-right: 10px; /* Adjust the margin between images if needed */
 }
 
-.article-boxes {
-  display: flex;
-  justify-content: center;
-}
-
-.article-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  text-align: left; /* Align text to the left */
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 0 10px;
-  flex-grow: 1;
-}
-
-.article-box img {
-  width: 80%; /* Set width to 100% */
-  max-height: 80%; /* You can keep the max-height as it is or adjust it accordingly */
-  margin-bottom: 20px; /* Add some space between the image and content */
-}
-
-.article-content {
-  width: 100%;
-}
-
 
 .brand-with-text img{
   max-width: 280px;
@@ -173,12 +146,6 @@ img {
 
 /* Image Hover Effect */
 .image:hover {
-  border: 2px solid #c7c7c7; /* Change border color on hover */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
-}
-
-/* Article Box Image Hover Effect */
-.article-box:hover {
   border: 2px solid #c7c7c7; /* Change border color on hover */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
 }
@@ -263,15 +230,34 @@ i {
   color: inherit;
 }
 
+.article-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 90%; /* Adjust the max-width as needed */
+}
+
+.article-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect */
+.article-item:hover img {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+.article-item a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 /* Media Queries for Responsive Design */
 @media only screen and (max-width: 800px) and (min-width: 200px) {
 
-  .article-box img {
-    width: 130%; /* Set width to 100% */
-    max-height: 130%; /* You can keep the max-height as it is or adjust it accordingly */
-    margin-bottom: 20px; /* Add some space between the image and content */
-  }
 
   img {
     max-width: 100%;
