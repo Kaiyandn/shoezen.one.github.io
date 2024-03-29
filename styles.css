@@ -234,7 +234,7 @@ i {
   position: relative;
   overflow: hidden;
   margin: 0 auto; /* Center horizontally */
-  max-width: 90%; /* Adjust the max-width as needed */
+  max-width: 80%; /* Adjust the max-width as needed */
 }
 
 .article-item img {
