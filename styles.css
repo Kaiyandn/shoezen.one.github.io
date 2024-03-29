@@ -133,20 +133,25 @@ img {
 }
 
 .article-box {
-  display: flex; /* Use flex to align image and content */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
   text-align: left; /* Align text to the left */
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 8px;
   margin: 0 10px;
-  flex-grow: 1; /* Each box takes equal width */
+  flex-grow: 1;
 }
 
 .article-box img {
-  max-width: 250px;
-  max-height: 260px;
-  margin-right: 20px; /* Add some space between the image and content */
+  width: 80%; /* Set width to 100% */
+  max-height: 80%; /* You can keep the max-height as it is or adjust it accordingly */
+  margin-bottom: 20px; /* Add some space between the image and content */
+}
+
+.article-content {
+  width: 100%;
 }
 
 
@@ -258,38 +263,15 @@ i {
   color: inherit;
 }
 
-/* CSS for Article Container */
-.article-container {
-  width: 300px;
-  height: 400px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.article-image {
-  width: 300px;
-  height: 280px;
-  display: block;
-}
-
-.article-summary {
-  padding: 20px;
-}
-
-.article-title {
-  font-size: 20px;
-  margin-top: 0;
-}
-
-.article-text {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 10px;
-}
 
 /* Media Queries for Responsive Design */
 @media only screen and (max-width: 768px) {
+
+  .article-box img {
+    width: 130%; /* Set width to 100% */
+    max-height: 130%; /* You can keep the max-height as it is or adjust it accordingly */
+    margin-bottom: 20px; /* Add some space between the image and content */
+  }
 
   img {
     max-width: 100%;
@@ -323,21 +305,6 @@ i {
   .banner {
     width: auto;
     height: 250px;
-  }
-
-  .article-box img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-top: 20px; /* Add some space between the image and content */
-  }
-
-  .article-box {
-    display: flex; /* Use flex to align image and content */
-    text-align: center; /* Align text to the left */
-    background-color: #f2f2f2;
-    border-radius: 8px;
-    margin: 0 10px;
-    flex-grow: 1; /* Each box takes equal width */
   }
 
   .gallery {
