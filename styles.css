@@ -203,7 +203,7 @@ i {
 /* Gallery container */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(17%, 1fr)); /* Responsive grid layout */
   gap: 5px; /* Adjust the gap between items */
 }
 
@@ -256,13 +256,17 @@ i {
 
 
 /* Media Queries for Responsive Design */
-@media only screen and (max-width: 800px) and (min-width: 200px) {
+@media only screen and (max-width: 800px) and (min-width: 100px) {
 
+  .banner {
+    visibility: hidden;
+    width: auto;
+    height: 100px;
+  }
 
   img {
-    max-width: 100%;
     height: auto;
-    width: 220px;
+    width: 60%;
   }
 
   .navbar {
@@ -271,12 +275,22 @@ i {
   }
   
   .navbar ul {
-    margin-top: 20px;
+    margin-top: 0%;
   }
   
   .navbar li {
-    margin: 30px 0;
+    margin: 4%;
   }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+
   .image-with-text {
     display: flex;
     flex-direction: column;
@@ -287,15 +301,10 @@ i {
   .image-text {
     margin-top: 20px;
   }
-  
-  .banner {
-    width: auto;
-    height: 250px;
-  }
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(18%, 1fr)); /* Responsive grid layout */
     gap: 10px; /* Adjust the gap between items */
   }
   
@@ -319,12 +328,13 @@ i {
     position: relative;
     overflow: hidden;
     margin: 0 auto; /* Center horizontally */
-    max-width: 100% /* Adjust the max-width as needed */
+    height: 100%;
+    width: 100%; /* Adjust the max-width as needed */
   }
   
   .article-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: transform 0.3s ease;
   }
   
