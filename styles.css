@@ -128,14 +128,6 @@ img {
 }
 
 
-.brand-with-text img{
-  max-width: 280px;
-  max-height: 80px;
-  margin-left: 140px;
-  
-}
-
-
 /* Add the following styles for the hover effect */
 
 /* Contact Box Hover Effect */
@@ -159,10 +151,6 @@ img {
   padding-right: 20px;
 }
 
-.brand-with-text img:hover {
-  border: 2px solid #c7c7c7; /* Change border color on hover */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on hover */
-}
 
 .text-left {
 text-align: left;
@@ -282,6 +270,11 @@ i {
     margin: 2%;
   }
 
+  p {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
   .navbar a {
     text-decoration: none;
     color: white;
@@ -304,7 +297,7 @@ i {
 
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* Responsive grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); /* Responsive grid layout */
     gap: 2%; /* Adjust the gap between items */
   }
   
