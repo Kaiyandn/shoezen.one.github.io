@@ -242,11 +242,33 @@ i {
   color: inherit;
 }
 
+.partnercontent-media {
+  visibility: hidden;
+  width: auto;
+  height: 100px;
+
+  }
 
 /* Media Queries for Responsive Design */
 @media only screen and (max-width: 800px) and (min-width: 100px) {
 
+
+  .partnercontent-media {
+    visibility: visible;
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+
   .banner {
+    visibility: hidden;
+    width: auto;
+    height: 100px;
+  }
+
+  .partnercontent {
     visibility: hidden;
     width: auto;
     height: 100px;
